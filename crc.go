@@ -68,5 +68,5 @@ func (crc *crc) pushBytes(bs []byte) *crc {
 }
 
 func (crc *crc) value() uint16 {
-	return uint16(crc.high)<<8 | uint16(crc.low)
+	return uint16(crc.low)<<8 | uint16(crc.high)
 }
